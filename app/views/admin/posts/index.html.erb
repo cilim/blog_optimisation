@@ -1,0 +1,18 @@
+<h1>CodeCamp Blog</h1>
+
+<h3>Welcome!</h3>
+<%= link_to "New post", new_admin_post_path %>
+
+<table>
+  <thead>
+  <tr>
+    <td>ID</td>
+    <td>Title</td>
+    <td>Content</td>
+    <td>Actions</td>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render @posts %>
+  </tbody>
+</table>

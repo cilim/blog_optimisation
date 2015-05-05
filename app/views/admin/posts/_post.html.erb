@@ -1,0 +1,8 @@
+<tr>
+  <td><%= post.id %></td>
+  <td><%= post.title %></td>
+  <td><%= "#{post.content[0..100]}..." %></td>
+  <td><%= link_to "Pregled", admin_post_path(post) %> |
+  <%= link_to "Edit", edit_admin_post_path(post) %> |
+  <%= link_to "Delete", admin_post_path(post), method: :delete, data: {confirm: 'Jeste li sigurni?'} %></td>
+</tr>

@@ -1,0 +1,6 @@
+<% if @comment.valid? %>
+$('.comments').html("<%= escape_javascript(render partial: 'comments/comment', collection: @post.comments ) %>");
+$(".new_comment").get(0).reset();
+<% else %>
+$("#comment_content").css("background", "red");
+<% end %>
